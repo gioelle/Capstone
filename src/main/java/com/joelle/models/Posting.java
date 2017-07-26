@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -23,7 +24,10 @@ public class Posting {
 	private String description;
 	@Column
 	private int instances;
-	private ArrayList<String> images = new ArrayList<String>();
+	@OneToMany
+	private ImageFiles imageFiles;
+	
+	//private ArrayList<ImageFiles> images = new ArrayList<ImageFiles>();
 	
 	//default constructor
 	public Posting () {}
@@ -53,12 +57,12 @@ public class Posting {
 	public void setInstances(int instances) {
 		this.instances = instances;
 	}
-	public ArrayList<String> getImages() {
-		return images;
-	}
-	public void setImages(ArrayList<String> images) {
-		this.images = images;
-	}
+//	public ArrayList<String> getImages() {
+//		return images;
+//	}
+//	public void setImages(ArrayList<String> images) {
+//		this.images = images;
+//	}
 
 
 	public String getType() {

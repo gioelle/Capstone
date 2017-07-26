@@ -33,7 +33,14 @@ public class HomeController {
 //		
 //		model.addAttribute("serverTime", formattedDate );
 //		
-		return "index";
+		return "NewFile";
 	}
+	
+	@RequestMapping(value = "/aboutUs", method = RequestMethod.GET)
+	public String about( Model model) {
+
+		return "aboutUs";
+	}
+	
 	
 }

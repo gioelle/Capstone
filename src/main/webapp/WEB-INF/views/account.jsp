@@ -3,59 +3,39 @@
 	uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
- <%@ page import="com.user.User" %>
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<% User u = (User) session.getAttribute("user"); %>
+ <%@ page import="com.joelle.models.User" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<style>
-	table {
-	    font-family: arial, sans-serif;
-	    border-collapse: collapse;
-	    width: 100%;
-	    style: float-right;
-	}
-	
-	td, th {
-	    border: 1px solid #dddddd;
-	    text-align: left;
-	    padding: 8px;
-	}
-	
-	tr {
-	    background-color: #dddddd;
-	}
+<link rel="stylesheet" href="resources/css/creative.css"/>
+<link rel="stylesheet" href="resources/img/header.jpg"/>
 
-	
-</style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Account Home</title>
+<title>SwaProcity Home</title>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="btn btn-info" data-toggle="collapse in" data-target="#navbar"></button>
-				<div id="navbar" class="collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</div>
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#navbar">
+				
 			Welcome to SwaProcity
+			</button>
+			
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#navbar">
+			<a href="aboutUs">About Us</a>			
+			</button>
 		</div>
 		<div id="navbar" class="navbar-colapse collapse"></div> 
 		</div>
 	</nav>
 		<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron" style="font-family: lobster; background: url('file:///Users/Joelle.Fronzaglio/Downloads/Coins.jpg')">
+	<div class="jumbotron">
 		<div class="container">
-		<h1>Hello, <% out.print(u.getFirstName()); %></h1>
-		<p style="font-size: 35px; color: ab0fc8; text-shadow: 2px 2px #000000;">Thank you for investing in your community.</p>
-		<p style="font-size: 35px; color: ab0fc8; text-shadow: 2px 2px #000000;">Please list services, items, or resources you have to share or are in need of.</p>
+		<h1>Hello, <% out.print("Example Username to be replaced with code."); %></h1>
+		<p style="font-size: 35px">Thank you for investing in your community.</p>
+		<p style="font-size: 35px">Please list services, items, or resources you have to share or are in need of.</p>
 		</div>
 	</div>
 <!-- 	<div style="float-left" class="container">
@@ -82,9 +62,9 @@
 			    <p>RESOURCE (Does anyone have this thing I could use?)</p>
 			   </div>
 		</div>	 -->
-
-  <form action="/CreatePosting" method="POST">
-  		<h3>Create a new posting here</h3>
+<div class="container">
+  <form action="CreatePosting" method="POST" style="align:center; Width:35%">
+  		<h3>Create a new post:</h3>
   		<input type="radio" name="type" value="item" id="type"/>
 		<label for="item">Item</label>
 		<br>
@@ -101,7 +81,7 @@
 		</div>
 		<div class="form-group">
 			<label for="description">Description</label>
-			<input type="text" class="form-control" name="description" id="description" placeholder="A thorough description of your item, service, or sharble resource">
+			<input type="text" class="form-control" name="description" id="description" placeholder="A thorough description of your item, service, or sharable resource">
 		</div>
 		<div class="form-group">
 			<label for="value">Value</label>
@@ -109,16 +89,17 @@
 		</div>
 
 		<div class="form-group">
-			<label for="photo">Upload Photo (please use at least one quality photo)</label>
-			<input type="text" class="form-control" name="photo" id="photo" placeholder="url/fileAddr">
+			<label for="photo">Photo (please upload at least one quality photo)</label>
+			<input type="file" class="form-control" name="photo" id="photo" placeholder="url/fileAddr">
 		</div>
 		<div class="form-group">
 			<label for="password">Photo</label>
-			<input type="text" class="form-control" name="photo" id="photo" placeholder="url/fileAddr">
+			<input type="file" class="form-control" name="photo" id="photo" placeholder="url/fileAddr">
 		</div>
+		<button type = "submit" class="btn btn-default">POST!</button>
 		
   </form>
-  
+  </div>
   
   
   <!-- TWO TABLES BELOW, ONE TO SHOW USER'S ACTIVE POSTINGS, ONE TO SHOW TRANSACTION HISTORY OF USER -->

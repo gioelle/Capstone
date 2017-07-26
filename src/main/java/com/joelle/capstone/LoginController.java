@@ -21,7 +21,7 @@ public class LoginController {
             @ModelAttribute("loginBean") LoginBean loginBean) {
     	
     	System.out.println("inside loginbean" + loginBean.getUserName() + loginBean.getPassword());
-    	//Checkes that the loginbean isn't empty, that username and password aren't empty
+    	//Checks that the loginbean isn't empty, that username and password aren't empty
         if (loginBean != null && loginBean.getUserName() != null & loginBean.getPassword() != null) {
             if (loginBean.getUserName().equals("user@user.com") && loginBean.getPassword().equals("pass")) {
             	//Make a method call to DAO to get the user/account model object.
