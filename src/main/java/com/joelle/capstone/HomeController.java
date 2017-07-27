@@ -33,13 +33,13 @@ public class HomeController {
 //		
 //		model.addAttribute("serverTime", formattedDate );
 //		
-		return "NewFile";
+		return "about";
 	}
 	
 	@RequestMapping(value = "/aboutUs", method = RequestMethod.GET)
 	public String about( Model model) {
 
-		return "aboutUs";
+		return "about";
 	}
 	
 	

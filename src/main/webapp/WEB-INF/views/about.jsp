@@ -11,18 +11,18 @@
     <title>SwaProcity</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/index/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/index/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="resources/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="resources/index/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="resources/css/creative.css" rel="stylesheet">
+    <link href="resources/index/css/creative.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +42,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">SwaProcity Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,7 +72,8 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">SwaProcity</h1>
                 <hr>
-                <p>Offer and ask for <br>Items, Services, and Resources<br>Invest in your <b>COMMUNITY</b> Invests in You</p>
+                <p>Invest in <b>YOUR COMMUNITY</b> Invests in You</p>
+                <img src="../resources/img/Reciprocity.jpg" class="img-responsive" alt="">
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
@@ -99,7 +100,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">What is SwaProcity?</h2>
+                    <p class="text-muted">SwaProcity is a virtual currency of local barter of items, services, and resources. It is what you make it.</p>
                     <hr class="primary">
                 </div>
             </div>
@@ -109,29 +111,29 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <h3>Coal to Diamonds</h3>
+                        <p class="text-muted">One woman's trash is another woman's treasure.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <h3>Borrow an Airplane</h3>
+                        <p class="text-muted">Need an air compressor? Monkey wrench? Food dehydrator? Borrow costly resources you might only use once, and share those things you already invested in.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <h3>They Have Sweet Skills</h3>
+                        <p class="text-muted">Your neighbor's skill set compliments your own, get their help on that new firepit or help them put a new roof on.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>SwaProcity Community</h3>
+                        <p class="text-muted">Build relationships while working toward a greener earth and keeping dollars local.</p>
                     </div>
                 </div>
             </div>
@@ -248,9 +250,13 @@
 				<label for="password">Top-Secret Unsharable KeyPhrase here:</label>
 				<input type="password" class="form-control" name="password" id="password" placeholder="password">
 			</div>
-			 <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button"><button type="submit" class="btn btn-default">To my accounts!</button>
-		</a>
+			 <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button"><button type="submit" class="btn btn-default">To my accounts!</button></a>
 			</form>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="container text-center">
 	              <form class = "container" action="RegistrationServlet" method="post" style="width:40%">
 				<h3>Not yet in the club? Sign up here!</h3>
 				<div class="form-group">
@@ -317,15 +323,15 @@
     </section>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="resources/index/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="resources/index/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="resources/index/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="resources/index/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
