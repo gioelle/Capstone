@@ -34,6 +34,7 @@ public class User {
 	private ArrayList<Transaction> transactions = new ArrayList<Transaction>();	
 	private ArrayList<Posting> postings = new ArrayList<Posting>();
 	
+	
 	//default constructor
 	public User() {}
 	//parameterized constructor

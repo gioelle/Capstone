@@ -55,7 +55,7 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="register">Login/Sign Up</a>
+                        <a class="page-scroll" href="#register">Login/Sign Up</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -236,7 +236,8 @@
             </div>
         </div>
     </section>
-
+    
+ <section id="register">
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
@@ -250,7 +251,8 @@
 				<label for="password">Top-Secret Unsharable KeyPhrase here:</label>
 				<input type="password" class="form-control" name="password" id="password" placeholder="password">
 			</div>
-			 <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button"><button type="submit" class="btn btn-default">To my accounts!</button></a>
+			<button type = "submit" class="btn btn-default">To my account!</button>
+		<!--  <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-sm sr-button"><button type="submit" class="btn btn-default"></button></a> -->
 			</form>
 			</div>
 			<br>
@@ -301,7 +303,7 @@
             </div>
         </div>
     </aside>
-
+</section>
     <section id="contact">
         <div class="container">
             <div class="row">
