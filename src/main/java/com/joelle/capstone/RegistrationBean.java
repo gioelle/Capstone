@@ -1,14 +1,25 @@
 package com.joelle.capstone;
 
+@Entity
+@Table(name="user")
 public class RegistrationBean {
+	@Column
 	private String username;
+	@Column
     private String password;
+	@Column
     private String firstName; 
+	@Column
     private String lastName;
+	@Column
     private String streetName;
+	@Column
     private String city;
+	@Column
     private String state;
+	@Column
     private String zipcode;
+	@Column
     private String profilePic;
     
 	public String getUsername() {

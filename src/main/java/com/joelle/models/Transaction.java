@@ -19,7 +19,19 @@ public class Transaction {
 	private int value;
 	@Column
 	private String user;
+	@Column
+	private String title;
 	
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
 	public Transaction(int amount, String user) {
 		this.date = Calendar.getInstance().getTime();
 	}

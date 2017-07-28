@@ -106,12 +106,11 @@
         </div>
     </section>
 
-    <section id="services">
+    <section id="services"  style="padding:50px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What is SwaProcity?</h2>
-                    <p class="text-muted">SwaProcity is a virtual currency of local barter of items, services, and resources. It is what you make it.</p>
+                    <h2 class="section-heading">Recent Transactions</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -120,39 +119,50 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Coal to Diamonds</h3>
-                        <p class="text-muted">One woman's trash is another woman's treasure.</p>
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i><br>
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i><br>
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i><br>
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i><br>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Borrow an Airplane</h3>
-                        <p class="text-muted">Need an air compressor? Monkey wrench? Food dehydrator? Borrow costly resources you might only use once, and share those things you already invested in.</p>
+                        <p class="text-muted">Today ${transaction.date}<br>Test Title ${transaction.title}<br>Value ${transaction.value}<br>User ${transaction.user}</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>They Have Sweet Skills</h3>
-                        <p class="text-muted">Your neighbor's skill set compliments your own, get their help on that new firepit or help them put a new roof on.</p>
+                        <p class="text-muted">Today ${transaction.date}<br>Test Title ${transaction.title}<br>Value ${transaction.value}<br>User ${transaction.user}</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>SwaProcity Community</h3>
-                        <p class="text-muted">Build relationships while working toward a greener earth and keeping dollars local.</p>
+                        <p class="text-muted">Today ${transaction.date}<br>Test Title ${transaction.title}<br>Value ${transaction.value}<br>User ${transaction.user}</p>
                     </div>
                 </div>
-            </div>
+                 <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p class="text-muted">Today ${transaction.date}<br>Test Title ${transaction.title}<br>Value ${transaction.value}<br>User ${transaction.user}</p>
+                    </div>
+                </div>
+                 <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p class="text-muted">Today ${transaction.date}<br>Test Title ${transaction.title}<br>Value ${transaction.value}<br>User ${transaction.user}</p>
+                    </div>
+                </div>
+                 <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <p class="text-muted">Today ${transaction.date}<br>Test Title ${transaction.title}<br>Value ${transaction.value}<br>User ${transaction.user}</p>
+                    </div>
+                </div>
+			</div>
         </div>
     </section>
 
 
-	<section id="register">
-		<aside class="bg-dark" style="padding:75px; height:700px">
+	<section id="post" style="background-color:#222">
+		<aside class="bg-dark" style="padding:50px; height:700px">
+		<h1 style="align:center; color:#f05f40">SwaPosting</h1>
 			<div class="bg-dark" style="width: 100%">
 				<form action="CreatePosting" method="POST" style="align: center; Width: 40%; float: left; padding-right:50px">
 					<h3>Create a new post:</h3>
@@ -197,14 +207,14 @@
 				<h3>What should I post? </h3>
 					<br> <i class="fa fa-4x fa-diamond text-primary sr-icons" style="font-size: 125%"></i><br>
 					<p>
-					Any items you might discard that are in usable shape - think "One
-					woman's trash is another woman's treasure". Stained, in need of
+					Post any items you might discard that are in usable shape - think "One
+					woman's trash is another woman's treasure".<br> Stained, in need of
 					repair, or only usable as an upcycled item? Just be sure to be
 					clear in your description. <br>
 					Post about an item you're searching for - someone might just be
 					inspired to pass something on to you. </p>
 					<br><i class="fa fa-4x fa-newspaper-o text-primary sr-icons" style="font-size: 125%"></i><br>
-					<p>Any skills you have or are in need of. Do you happen to be a very
+					<p>Post any skills you have or are in need of. Do you happen to be a very
 					detailed house painter? Do you enjoy cleaning, cutting hair,
 					walking dogs? Maybe you're an electrician, plumber, or consultant.
 					<br> Is your roof leaking, car not
@@ -219,16 +229,18 @@
 					has what you need.
 					</p>
 			</div>
+		</div>
 		</aside>
 	</section>
-	<section id="contact">
+ <section id="contact" style="padding:50px; background-color:#faf6d0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Have questions, suggestions, or requests?</p>
-                </div>
+                    <img src="resources/index/img/Reciprocity.jpg" class="img-responsive" style="max-width:75%; margin:auto" alt="">
+					<hr class="primary">
+					<p>Have questions, suggestions, or requests?</p>
+				</div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
                     <p>(573)201-5332</p>
@@ -239,9 +251,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>	
 
-    <!-- jQuery -->
+	<!-- jQuery -->
     <script src="resources/index/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->

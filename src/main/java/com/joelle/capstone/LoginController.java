@@ -32,11 +32,11 @@ public class LoginController {
                 return "account";
             } else {
                 model.addAttribute("error", "Invalid Details");
-                return "index";
+                return "home";
             }
         } else {
             model.addAttribute("error", "Please enter Details");
-            return "index";
+            return "home";
         }
     }
     
@@ -46,7 +46,7 @@ public class LoginController {
     	if(registrationBean != null) {
     		return "account";
     	} else {
-    		return "index";
+    		return "home";
     	}
     }
 }
